@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<h1>COUNTER</h1>
+
+<div id="number"></div>
+
+<div id="buttons">
+	<button type="button" onclick="decrease()">DECREASE</button><button type="button" onclick="reset()">RESET</button><button type="button" onclick="increase()">INCREASE</button>
+</div>
+
+<script>
+
+const numberwillchange = document.getElementById("number");
+
+var num = 0 ;
+numberwillchange.innerHTML = 0 ;
+
+function increase() {
+
+num = num + 1 ;
+numberwillchange.innerHTML = num ;
+
+}
+
+function decrease() {
+
+num = num - 1 ;
+numberwillchange.innerHTML = num ;
+
+}
+
+function reset() {
+
+window.location.reload();
+
+}
+
+
+</script>
+
+
+</body>
+</html>
